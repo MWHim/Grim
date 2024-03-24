@@ -115,11 +115,11 @@ TimerA:
   drift: 120
   # Ping at which the check will start to limit timer balance, to prevent abuse.
   # Can cause some setbacks for legitimate players but only if they are over this ping threshold.
-  # -1 to disable
+  # -1 关闭
   ping-abuse-limit-threshold: 1000
 
 NegativeTimer:
-  # Number of milliseconds lost while moving before we should start flagging
+  # 玩家违规多少秒后启用flagging
   drift: 1200
 
 # 与 TimerA 相同的检查方法，但适用于坐骑
@@ -150,7 +150,7 @@ Reach:
 
 exploit:
   allow-sprint-jumping-when-using-elytra: true
-  # 该选项可在发生鬼块时重新同步玩家，从而减轻玩家在鬼块上的位置。
+  # 该选项可在发生玩家与区块不同步时重新同步玩家，从而减轻玩家在不同步区块上的位置。
   allow-building-on-ghostblocks: true
   distance-to-check-if-ghostblocks: 2
 
